@@ -5,7 +5,7 @@ public extension Container {
     
     /// Containerに `serviceType` で指定した型の実態を登録する
     ///
-    /// ```
+    /// ```swift
     /// container.register(Protocol.self) { injector in ProtocolImpl(injector: injector) }
     /// ```
     ///

@@ -4,7 +4,7 @@ import Swinject
 /// DI Injector
 ///
 /// 基本的には `Injector` を用いてDIを実装する
-/// ```
+/// ```swift
 /// class AppContainer {
 ///     static func build() -> Container {
 ///         let container = Container()
