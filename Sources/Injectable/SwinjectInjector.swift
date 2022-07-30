@@ -1,6 +1,9 @@
 import Foundation
 import Swinject
 
+/// SwinjectのResolverをInjectableで利用できるようにラップしたもの
+///
+/// `Container.register()` で factory を指定する際に利用できる
 public class SwinjectInjector: Injectable {
     
     private let resolver: Resolver

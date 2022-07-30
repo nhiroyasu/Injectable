@@ -1,6 +1,22 @@
 import Foundation
 import Swinject
 
+/// DI Injector
+///
+/// 基本的には `Injector` を用いてDIを実装する
+/// ```
+/// class AppContainer {
+///     static func build() -> Container {
+///         let container = Container()
+///         container.register(Protocol.self) { _ in ProtocolImpl() }
+///         return container
+///     }
+/// }
+///
+/// extension Injector {
+///     static let shared = Injector(container: AppContainer.build())
+/// }
+/// ```
 public class Injector: Injectable {
     
     public let container: Container
