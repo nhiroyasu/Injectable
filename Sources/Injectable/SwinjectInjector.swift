@@ -8,7 +8,7 @@ public class SwinjectInjector: Injectable {
     
     private let resolver: Resolver
     
-    init(_ resolver: Resolver) {
+    public init(_ resolver: Resolver) {
         self.resolver = resolver
     }
     
